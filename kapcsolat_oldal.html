@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+      <link rel="stylesheet" href="kapcsolat_oldal.css">
+      <title>Kapcsolat</title>
+      <link rel="icon" type="image/x-icon" href="kfgkulcslogo.svg">
+   </head>
+   <body>
+        <div class="margo">
+            <div class="tarolo mt-5">
+                <h1>Kapcsolat</h1>
+                <form class="sor g-3" action="https://formsubmit.co/kovacs.aurel2005@gmail.com" method="POST">
+                    <div class="col-md-6">
+                        <label for="vezeteknev" class="form-label">Vezetéknév:</label>
+                        <input type="text" class="form-control" id="vezeteknev" required="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="keresztnev" class="form-label">Kersztnév:</label>
+                        <input type="text" class="form-control" id="keresztnev" required="">
+                    </div>
+                    <div class="col-md-8">
+                        <label for="emailcim" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="emailcim" required="">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="osztaly" class="form-label">Osztály:</label>
+                        <input type="text" class="form-control" id="osztaly" required="">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="uzenet" class="form-label">Üzenet:</label>
+                        <textarea class="form-control" id="uzenet" rows="3" required=""></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Küldés</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+   </body>
+</html>

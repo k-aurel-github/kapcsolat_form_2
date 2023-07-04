@@ -1,0 +1,230 @@
+* { 
+    box-sizing: border-box;
+} 
+
+body { 
+    margin: 0; 
+    font-family: var(--bs-font-sans-serif); 
+    font-size: 1rem; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: #212529; 
+    background-color: #fff;
+} 
+
+:root { 
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+} 
+
+@media (prefers-reduced-motion: no-preference){ 
+  :root { 
+    scroll-behavior: smooth;
+  } 
+}     
+
+@media (min-width: 1000px){
+  .margo {
+    margin-right: 15rem;
+    margin-left: 15rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .margo {
+    margin-right: 20rem;
+    margin-left: 20rem;
+  }
+}
+
+.tarolo { 
+    width: 100%; 
+    padding-right: var(--bs-gutter-x,.75rem); 
+    padding-left: var(--bs-gutter-x,.75rem); 
+    margin-right: auto; 
+    margin-left: auto;
+} 
+
+@media (min-width: 576px){ 
+  .tarolo { 
+    max-width: 540px;
+  } 
+}     
+
+@media (min-width: 768px){ 
+  .tarolo { 
+    max-width: 720px;
+  } 
+}    
+
+.mt-5 { 
+    margin-top: 3rem!important;
+}
+
+h1 { 
+    margin-top:  0; 
+    margin-bottom:  3rem; 
+    font-weight:  500; 
+    line-height:  1.2;
+    font-size: calc(1.375rem + 1.5vw);
+    text-align: center;
+} 
+
+@media (min-width: 1200px){ 
+  h1 { 
+    font-size: 2.5rem;
+  } 
+}     
+
+.sor { 
+    --bs-gutter-x: 1.5rem; 
+    --bs-gutter-y: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: calc(var(--bs-gutter-y) * -1); 
+    margin-right: calc(var(--bs-gutter-x)/ -2); 
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+} 
+
+.g-3 { 
+    --bs-gutter-x:  1rem;
+    --bs-gutter-y: 1rem;
+} 
+
+.sor > *  { 
+    flex-shrink: 0; 
+    width: 100%; 
+    max-width: 100%; 
+    padding-right: calc(var(--bs-gutter-x)/ 2); 
+    padding-left: calc(var(--bs-gutter-x)/ 2); 
+    margin-top: var(--bs-gutter-y);
+} 
+
+@media (min-width: 768px){ 
+  .col-md-6 { 
+    flex: 0 0 auto; 
+    width: 50%;
+  }
+  .btn { 
+    display: inline-block; 
+    font-weight: 400; 
+    line-height: 1.5;
+    text-align: center; 
+    text-decoration: none; 
+    vertical-align: middle; 
+    cursor: pointer; 
+    user-select: none; 
+    background-color: transparent; 
+    border: 1px solid transparent; 
+    padding: .375rem .75rem; 
+    font-size: 1rem; 
+    border-radius: .25rem;
+} 
+
+  .col-md-8 { 
+    flex: 0 0 auto; 
+    width: 66.6666666667%;
+  } 
+
+  .col-md-4 { 
+    flex: 0 0 auto; 
+    width: 33.3333333333%;
+  } 
+
+  .col-md-12 { 
+    flex: 0 0 auto; 
+    width: 100%;
+  } 
+}     
+
+label { 
+    display: inline-block;
+} 
+
+.form-label { 
+    margin-bottom: .5rem;
+} 
+
+input { 
+    margin: 0; 
+    font-family: inherit; 
+    font-size: inherit; 
+    line-height: inherit;
+} 
+
+.form-control { 
+    display: block; 
+    width: 100%; 
+    padding: .375rem .75rem; 
+    font-size: 1rem; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: #212529; 
+    background-color: #fff; 
+    background-clip: padding-box; 
+    border: 1px solid #ced4da;
+    appearance: none; 
+    border-radius: .25rem; 
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+textarea { 
+    margin:  0; 
+    font-family:  inherit; 
+    font-size:  inherit; 
+    line-height:  inherit;
+    resize: vertical;
+} 
+
+textarea.form-control { 
+    min-height: calc(1.5em + .75rem + 2px);
+} 
+
+button { 
+    border-radius:   0;
+    margin:  0; 
+    font-family:  inherit; 
+    font-size:  inherit; 
+    line-height:  inherit;
+    text-transform: none;
+} 
+
+[type="submit"],button { 
+    -webkit-appearance: button;
+} 
+
+.btn { 
+    display: inline-block; 
+    font-weight: 400; 
+    line-height: 1.5;
+    text-align: center; 
+    text-decoration: none; 
+    vertical-align: middle; 
+    cursor: pointer; 
+    user-select: none; 
+    background-color: transparent; 
+    border: 1px solid transparent; 
+    padding: .375rem .75rem; 
+    font-size: 1rem; 
+    border-radius: .25rem;
+} 
+
+.btn-primary { 
+    color: #fff; 
+    background-color: hsl(155, 73%, 39%); 
+    border-color: hsl(155, 73%, 39%);
+    transition: all .25s ease-in-out;
+} 
+
+[type="submit"]:not(:disabled),button:not(:disabled) { 
+    cursor: pointer;
+} 
+
+.btn:hover {
+  transform: scale(1.1);
+} 
+
+.btn-primary:hover { 
+    color: #fff; 
+    background-color: hsl(155, 73%, 39%); 
+    border-color: hsl(155, 73%, 39%);
+}
